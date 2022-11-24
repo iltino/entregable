@@ -164,6 +164,7 @@ footer p {
   margin: auto;
 }
 
+
 #spinner-wrapper {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
@@ -188,3 +189,35 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+.carta{
+  
+  height: 500px;
+  width: 600px;
+  margin-left: 500px;
+  display: flex;
+  border-radius: 20px;
+  background-color: rgb(106, 185, 137);
+  color: aliceblue;
+}
+
+.login{
+  height: 750px;
+  width: 1600px;
+  background-color: rgb(45, 171, 221);
+  margin: auto;
+  padding-top:150px;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputCard{
+  border-radius: 7px;
+  height: 30px;
+}
+
+

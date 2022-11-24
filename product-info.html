@@ -10,6 +10,7 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -31,17 +32,52 @@
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
           <li class="nav-item">
+            <li class="nav-item">
+              <div class="dropdown">
+                <button id="nameUsuario" href="login.html" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 Usuario
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="cart.html">Mi Carrito</a></li>
+                  <li><a class="dropdown-item" href="my-profile.html" >Mi Perfil</a></li>
+                  <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+                </ul>
+              </div>
+            </li>
           </li>
         </ul>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button id="nameUsuario" href="login.html" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+             Usuario
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="cart.html">Mi Carrito</a></li>
+              <li><a class="dropdown-item" href="my-profile.html" >Mi Perfil</a></li>
+              <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </li>
       </div>
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
-    </div>
+    <div id="mostrar" class="container"></div><br>
+    <div class="figure">
+    <button class="btn btn-primary" id="agregarAlCarrito"  type="submit">Agregar al carrito</button><br><br>
+  </div>
+      <div id="coments"></div>
+      <h3>Comentar</h3>
+      <textarea> </textarea><br>
+      <h4>Puntuación</h4>
+      <select><option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option></select><br><br>
+        <button id="boton" class="btn btn-info">Enviar</button><br><br>
+       <div><h2>También te puede gustar.</h2></div> <br>
+        <div  id="recommend" ></div>
   </main>
   <footer class="text-muted">
     <div class="container">
@@ -61,6 +97,7 @@
       <div></div>
     </div>
   </div>
+  
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/product-info.js"></script>

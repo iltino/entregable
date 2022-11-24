@@ -47,14 +47,79 @@
           <li class="nav-item">
           </li>
         </ul>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button id="nameUsuario" href="login.html" class="btn btn-secondary dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+             Usuario
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="cart.html">Mi Carrito</a></li>
+              <li><a class="dropdown-item" href="my-profile.html" >Mi Perfil</a></li>
+              <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </li>
       </div>
     </div>
   </nav>
   <main>
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+      <div class="col">
+        <h2>Perfil</h2>
+        <hr>
       </div>
+      <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom01">Primer nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="First name" value="Mark" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom02">Segundo nombre</label>
+            <input type="text" class="form-control" id="secondName" placeholder="Segundo apellido"  required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustomUsername">Primer apellido</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="firstLastName" placeholder="Primer apellido" aria-describedby="inputGroupPrepend" value="Lilly" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom02">Segundo apellido</label>
+            <input type="text" class="form-control" id="secondLastName" placeholder="Segundo apellido"  required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom04">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control form-control-sm" id="email" value="email" >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Telefono de contacto</label>
+            <input type="number" class="form-control" id="validationCustom05"  required>
+            <div class="invalid-feedback">
+             
+            </div>
+          </div>
+        </div>
+        <hr>
+        <button class="btn btn-primary" type="submit">Guardar cambios</button>
+      </form>
     </div>
   </main>
   <footer class="text-muted">
