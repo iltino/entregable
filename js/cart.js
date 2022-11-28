@@ -1,5 +1,5 @@
 let carrito=[];
-
+let calculoTotal=0
 let direccion=CART_INFO_URL;
 
 
@@ -26,9 +26,9 @@ function showCarrito (carrito){
 
 function multiplicar(cantidad){
 let sumatoria= document.getElementById("calculo").value;
-let calculoTotal= sumatoria*cantidad
+ calculoTotal= sumatoria*cantidad
 document.getElementById("subTotal").innerHTML="USD " + calculoTotal;
-
+calcular()
 }
 
 
@@ -38,13 +38,8 @@ function calcular(){
   let precios = document.getElementsByClassName('pre');
   let subtotales = document.getElementsByClassName('subt');
   let envios = document.getElementsByName('envio');//Agarre todos los radio que se llaman "envio"
-  let subtotal=0, costoEnvio=0, total = 0
-  for (i=0; i< cantidades.length; i++){
-      subtotal+=parseInt(cantidades[i].value) * parseFloat(precios[i].innerHTML);
-      subtotales[i].innerHTML = (parseInt(cantidades[i].value) * parseFloat(precios[i].innerHTML)).toFixed(2);
-     
-      //cantidades[i].addEventListener('change',()=>{calcular();})    
-  }
+  let subtotal=calculoTotal, costoEnvio=0, total = 0
+ 
   
   for (let envio of envios){ //recorro los radio
       if (envio.checked){//pregunto si esta marcado
@@ -61,7 +56,7 @@ function calcular(){
 document.addEventListener('DOMContentLoaded',()=>{
 
   showCarrito(carrito)
-  calcular()
+  
 })
 
 

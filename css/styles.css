@@ -220,4 +220,14 @@ a.custom-card:hover {
   height: 30px;
 }
 
+.fotoPerfil{
+  width: 100px;
+  height: 100px;
+  float: right;
+
+  margin-right: 500px;
+
+  background-color: blue;
+}
+
 

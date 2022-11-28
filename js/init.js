@@ -40,3 +40,5 @@ let getJSONData = function(url){
     });
 }
 
+let nameuser=localStorage.getItem('user')
+            document.getElementById("nameUsuario").innerHTML=nameuser;
